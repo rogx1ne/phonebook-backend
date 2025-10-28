@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import fs from 'fs/promises';
-import db from '../db.json' with { type: 'json' };
+import db from './db.json' with { type: 'json' };
 
 const app = express();
 let persons = db.persons;
