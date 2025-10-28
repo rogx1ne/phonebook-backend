@@ -20,6 +20,13 @@ const saveToFile = async () => {
   }
 };
 
+
+app.get('/', (request, response) => {
+  const front='This is a phonebook backend'
+  response.send(front);
+});
+
+
 app.get('/api/persons', (request, response) => {
   response.json(persons);
 });
